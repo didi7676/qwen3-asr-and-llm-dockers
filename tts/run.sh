@@ -1,0 +1,1 @@
+docker run -it --rm   --device=/dev/kfd --device=/dev/dri   --security-opt seccomp=unconfined   -v $(pwd)/models/Qwen3-TTS-12Hz-1.7B-CustomVoice:/app/model   -v $(pwd)/output:/app/output   qwen3-tts-amd 
